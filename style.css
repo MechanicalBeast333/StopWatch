@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,orangered,orange);
+}
+
+@media  screen and (min-width:800px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1px;
+        background-color: black;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 15px -15px 10px black; 
+        width: auto;
+    }
+    .inner{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        width: 200px;
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .text{
+        font-size:100px;
+        font-family: 'Akaya Telivigala', cursive;
+        color: white;
+        text-shadow: 1px 1px 2px black; 
+    } 
+    .btn{
+        width: 120px;
+        height: 60px;
+        border-radius: 50px;
+        font-size:small;
+    }
+    
+}
+@media  screen and (max-width:800px) {
+    .main{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: black;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid white;
+        box-shadow: 7px -7px 8px black; 
+        width: auto;
+    }
+    .inner{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+       margin: 5px;
+       width: 130px;
+       background-color: black;
+       border-radius: 10px;
+       border: 1px solid white;
+    }
+ 
+ .text{
+     font-size:50px;
+     font-family: 'Akaya Telivigala', cursive;
+     color: white;
+     text-shadow: 1px 1px 2px black; 
+    
+ } 
+ .label{
+     font-size:10px;
+ }
+ .btn{
+     font-size: 8px;
+     width: 50px;
+     height: 40px;
+     border-radius:50%;
+
+ }
+     
+ }
+
+.label{
+    color: white;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+.btn{
+     font-family: 'Lobster', cursive;
+     border: none;
+     background: black ;
+     color: white;
+     border: 1px solid;
+     margin-bottom: 10px;
+     box-shadow: 1px 1px 2px black;
+     cursor: pointer;
+ }
+    
